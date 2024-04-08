@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Questions</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="styles.css"> <!-- Add your CSS file here -->
+</head>
+
+<body>
+    <header>
+        <h1 class="game-name">Trivia Quest</h1>
+    </header>
+
+
+    <main class="main">
+
+        <h2 class="introduction">**Welcome to Trivia Quest!**
+
+            Are you ready to test your knowledge and challenge your wits? Step into the world of Trivia Quest, where fun and excitement await!
+            
+            **Explore a World of Trivia:**
+            - Choose from a variety of categories including Disney, Film, and Countries.
+            - Select your preferred difficulty level – Easy, Medium, or Hard.
+            
+            **Start the Adventure:**
+            - Click on "Start Quiz" to embark on your trivia journey.
+            - Answer a series of engaging and brain-teasing questions.
+            
+            **Challenge Yourself:**
+            - Put your knowledge to the test and see how many questions you can answer correctly.
+            - Earn points and unlock achievements as you progress through the quiz.
+            
+            **Compete with Friends:**
+            - Share your scores and challenge your friends to beat your high score.
+            - Compete for the title of trivia champion!
+            
+            **Get Ready to Play:**
+            - Gather your friends and family, or enjoy a solo quest for knowledge.
+            - Let the adventure begin!
+            
+            Join us at Trivia Quest and let the quest for knowledge and fun begin!</h2>
+
+            <form id="trivia-form">
+            <label for="category">Select Category:</label>
+            <select id="category" name="category">
+                <option id="32" value="disney">Disney</option>
+                <option id="11" value="film">Film</option>
+                <option id="22" value="countries">Countries</option>
+            </select>
+
+            <label for="difficulty">Select Difficulty:</label>
+            <select id="difficulty" name="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+
+            <button class="start" type="submit">Start Quiz</button>
+        </form>
+
+        <div id="loading">
+            <div class="dot1"></div>
+            <div class="dot2"></div>
+            <div class="dot3"></div>
+          </div>
+
+        <div id="trivia-container">
+            <!-- Trivia questions will be displayed here -->
+        </div>
+    </main>
+
+
+    <script src="w06-final.js"></script>
+     <!-- Link your JavaScript file here -->
+</body>
+
+</html>
